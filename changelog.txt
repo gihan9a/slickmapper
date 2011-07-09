@@ -1,0 +1,10 @@
+Version 1.0 (7.9.2011)
+NEW: Initial Release
+
+-- Terms --
+NEW: Something added
+FIXED: Something fixed because it was broke
+REMOVED: Something removed for one reason or another
+REVISED: Something modified but has same or better result
+FILES ADDED: Files added to theme directory
+FILES RENAMED: Files in theme directory renamed to something else

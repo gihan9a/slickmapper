@@ -1,0 +1,72 @@
+/* GENERAL */
+.cs { font-size:11px }
+.cs .inside { margin: 6px 6px 8px }
+.cs .inner { position: relative; border: 1px solid #dfdfdf; background: #F9F9F9; margin: -1px; /*inner border hack*/ }
+.cs .head { background: #F9F9F9; overflow: hidden; position: relative }
+.cs .table { background: #FFFFFF; border-top: 1px solid #dfdfdf; overflow: hidden;  position: relative }
+
+/* FLUID */
+.cs .w25 { width: 25% !important }
+.cs .w33 { width: 33% !important }
+.cs .w50 { width: 50% !important }
+.cs .w67 { width: 67% !important }
+.cs .w75 { width: 75% !important }
+
+.cs .f50 { width: 50px !important }
+.cs .f75 { width: 75px !important }
+.cs .f100 { width: 100px !important }
+
+/* SPACING */
+.cs .row { overflow: hidden; border-bottom: 1px solid #F5F5F5; position: relative;}
+.cs .col { display: inline; float: left; }
+.cs .left { display: inline; float: left; }
+.cs .right { float: right; }
+.cs .gut { margin-right: 20px; }
+
+/* ELEMENTS */
+.cs span { color:#999; display:block; }
+.cs p { margin: 6px 6px 8px; font-size:11px !important; }
+.cs p.title { font-weight: bold; }
+.cs p.title span { display:inline; font-weight:normal; }
+.cs span.note { padding: 4px 6px 0 }
+.cs a { text-decoration: none }
+.cs a:hover { text-decoration: underline }
+.cs h3 { cursor: pointer; }
+.cs h4 { color:#999; text-shadow: 0 1px 0 #FFF; margin:10px 6px 9px; text-transform:uppercase; }
+.cs ul { margin: 0; padding: 0 10px 5px 10px; }
+.cs li { margin: 10px 0 5px 0; }
+
+.cs .intro { font-style: italic; margin-top: 10px; }
+.cs .border { border-top: 1px solid #F5F5F5; }
+.cs .divider { width: 100%; overflow: hidden; position: relative; display: block; height: 8px }
+.cs .save { padding: 8px; margin: 0; }
+.cs .close 
+{	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px; }
+
+.cs .leftside { float: right; position: absolute; top: 8px; left: 8px }
+.cs .rightside { float: right; position: absolute; top: 8px; right: 8px; text-align: right; }
+.cs .last { border: none; }
+
+/* FORM ELEMENTS */
+.cs label { font-weight:bold; margin: 12px 6px 6px; margin-bottom:0; font-size: 11px; }
+.cs label span { display:inline; font-weight:normal; }
+.cs label.checkbox,
+.cs label.radio { display: inline; }
+.cs select { display: block }
+.cs textarea,
+.cs input[type='text'] { margin: 2px 0 0 0; width:99%; }
+.cs input.file { border: none; }
+
+/* NON-SEMANTIC HELPER CLASSES */
+.cs .ir { display:block; text-indent:-999em; overflow:hidden; background-repeat: no-repeat; }
+.cs .hidden { display:none; visibility:hidden; } 
+.cs .visuallyhidden { position:absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
+.cs .invisible { visibility: hidden; }
+.cs .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.cs .clearfix { display: inline-block; }
+.cs * html .clearfix { height: 1%; }
+.cs .clearfix { display: block; }
+

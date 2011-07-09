@@ -1,0 +1,114 @@
+/*********************************************************************************************
+
+Theme Name: Slickmapper
+Theme URI: http://www.celtic7.com/
+Description: A  <a href="http://www.celtic7.com" title="CELTIC7 - Professional website design, development, and hosting" target="_blank">CELTIC7</a> design by <a href="http://www.lukemcdonald.com" title="Luke McDonald - Creative Digital Professional" target="_blank">Luke McDonald</a>. Updates and notfications available via <a href="http://facebook.com/celtic7studio" title="Become a fan on Facebook" target="_blank">Facebook</a> and <a href="http://twitter.com/celtic7studio" title="Follow CELTIC7 on Twitter" target="_blank">Twitter</a>.
+Tags: portfolio, three column, widgets, html5
+Version: 1.0.0
+Author: CELTIC7.com
+Author URI: http://www.celtic7.com/
+
+**********************************************************************************************
+
+Designed and Built by Luke McDonald - celtic7.com
+
+CSS, XHTML and Design Files are all Copyright 2010 CELTIC7 Studio, LLC
+
+*********************************************************************************************/
+
+ @import url("css/default.css");
+ @import url("slickmap.css");
+ 
+ 
+/* Basic
+*********************************************************************************************/
+p, ul, ol { margin-bottom:  15px }
+
+h1, h2, h3, h4, h5, h6 { margin: 5px 0 10px; line-height: 1em; font-weight: bold; color: #000 }
+h1 { font-size: 21px }
+h2 { font-size: 21px }
+h3 { font-size: 18px }
+h4 { font-size: 16px }
+h5 { font-size: 14px }
+h6 { font-size: 13px }
+
+
+/* Header
+*********************************************************************************************/
+#title-area { margin-bottom: 35px }
+#title-area h1, #title-area h2 { margin: 0 }
+#title-area h2 { font-size: 13px; font-style: italic; font-weight: normal; }
+
+#title-area a:link:before,
+#title-area a:visited:before {
+	content: "";
+}
+
+
+/* Content
+*********************************************************************************************/
+#content { padding: 20px 10px 5px 20px; color: 444; font: 13px/18px Gotham, Helvetica, Arial, sans-serif; }
+#content ul, #content ol { margin-left: 1.8em; }
+#content ul { list-style: disc; }
+#content ol { list-style: decimal }
+
+#fancybox-content a:link:before,
+#fancybox-content a:visited:before {
+	content: "";
+}
+
+.post-thumbnail { float: right; padding: 10px; border: 1px solid #E3E3E3; background: #F5F5F5; text-align: center; font-style: italic; font-size: 11px; margin: 0 10px 20px 15px; -khtml-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+
+blockquote {
+	margin: 1em 2em;
+	border-left: 3px solid #CCC;
+	padding-left: 1em;
+	font-style: italic;
+}
+
+
+/* WordPress Defaults
+*********************************************************************************************/
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+
+/* Footer
+*********************************************************************************************/
+#footer h3 { font-size: 13px }
+#footer a:link:before,
+#footer a:visited:before {
+	content: "";
+}
+

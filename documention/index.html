@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Slickmapper Theme Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		h3 a, h4 a { font-size: 12px }
+		.note { font-size: 12px; color: #666; font-style: italic; display: block; padding-left: 30px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Slickmapper Theme&rdquo; Documentation by &ldquo;Luke McDonald&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Slickmapper Theme&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 11/12/2010<br>
+					By: Luke McDonald</strong> (<a href="http://www.celtic7.com">CELTIC7</a>)<br>
+					<a href="http://www.themegarden.com/luke-mcdonald/">Themes on ThemeGarden</a><br>
+					<a href="http://www.twitter.com/celtic7studio">Follow on Twitter</a><br>
+					<a href="http://www.facebook.com/celtic7studio">Find on Facebook</a>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. <i>By supporting this theme, you have contributed to creating a healthier planet through my <a href="http://www.onepercentfortheplanet.org/" title="Learn More!" >1% For The Planet</a> membership</i>. If you have any questions that are beyond the scope of this help file, please feel free to contact me via my profile page on ThemeGarden.com <a href="http://www.themegarden.com/luke-mcdonald/">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#first-things">First Things First</a></li>
+			<li><a href="#menus">Custom Menus</a></li>
+			<li><a href="#options">Theme Options</a>
+				<ol>
+					<li><a href="#options-logos">Logos</a></li>
+					<li><a href="#options-icons">Icons</a></li>
+					<li><a href="#options-theme-styles">Theme Styles</a></li>
+					<li><a href="#options-menu">Navigation Menus</a></li>
+					<li><a href="#options-layout">Layout</a></li>
+					<li><a href="#options-misc">Miscellaneous</a></li>
+					<li><a href="#options-footer">Footer Text</a></li>
+					<li><a href="#options-analytics">Analytics</a></li>
+					<li><a href="#options-save-web">Save The Web</a></li>
+				</ol>
+			</li>
+			<li><a href="#thumbs">Post Thumbnails</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#workingFiles">Working Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>Installation</strong> - <a href="#toc">Top</a></h3>
+		
+				<p>The theme can be uploaded in two ways:</p>
+				
+				<ul>
+					<li>FTP upload: Using your FTP program, upload the non-zipped Slickmapper folder into the <em><strong>/wp-content/themes/</strong></em> folder on your server.</li>
+					<li>WordPress upload: Navigate to <em><strong>Appearance > Add New Themes > Upload</strong></em>. Go to browse, and select the zipped Slickmapper folder. Hit <em><strong>Install Now</strong></em> and the theme will be uploaded and installed.</li>
+				</ul>
+				
+				<p>Once the theme is uploaded, you need to activate it. Go to <em><strong>Appearance > Themes</strong></em> and activate Slickmapper theme.</p>
+				
+		<hr>
+		
+		
+		<h3 id="first-things"><strong>First Things First</strong> - <a href="#toc">Top</a></h3>
+		
+				<p>The theme needs to know how many columns (top level navigation items) there will be. After installing, visit the Layout options by going to <em><strong>Appearance > Theme Options > Layout (tab)</strong></em> and select a number from the dropdown. Any changes in the number of top level nav items will need to be updated here for the SlickMap CSS to function properly.</p>
+				
+		<hr>
+		
+		
+		
+		<h3 id="menus"><strong>Custom Menus</strong> - <a href="#toc">Top</a></h3>
+		
+				<p>If you use version 3.0+ of WordPress, you can setup custom menus to use with our theme. Slickmapper comes with two custom menu locations.</p>
+				
+				<ul>
+					<li>"Utility Menu" is located on the right side, detached from the primary menu.</li>
+					<li>"Primary Menu" is used for the Slickmap's main navigation structure..</li>
+				</ul>
+				
+				<p>If using custom menus, Slickmapper will use the first menu item as the "Home" element, which is required when using SlickMap CSS. With the use of jQuery, the first item will be given the appropriate class name.</p>
+				
+				<p>Should you be running earlier versions of WordPress, Slickmapper degrades gracefully and automatically creates all sets of navigation for you. Custom menus are replaced with a list of pages for the primary navigation and a login/out link for the utility navigation. In this case, you will have options to alter the display of these menus from the Slickmapper theme options.</p>
+				
+				<h4><strong>Setting up custom menus (WP3.0+)</strong> - <a href="#toc">Top</a></h4>
+				
+				<p>Go to <em><strong>Appearance > Menus</strong></em>. Give your menu a name and build it up using little widgets on the right. You can add pages, categories or custom URLs.</p>
+				
+				<p>Now simply select the theme location for your newly created menus using a widget on the left. Under <em><strong>Utility Menu</strong></em>, select your menu from the drop-down list, to use it as the site's utility navigation. The <em><strong>Primary Menu</strong></em> can be used to populate the main navigation.</p>
+				
+				<p>You can populate all or none of the menu options. To use the built in navigations, simply select the empty value from the menu drop-down choices.</p>
+		
+		<hr>
+		
+		
+		
+		<h3 id="options"><strong>Theme Options</strong> - <a href="#toc">Top</a></h3>
+		
+				<p class="box">Slickmapper comes with a simple to use administration panel. You can access it by navigating to <em><strong>Appearance > Theme Options</strong></em>. The theme options are conveniently spread over a number of accordion tabs. Each tab contains the options that pertain to a particular area of the theme.</p>
+				
+
+				<h4 id="options-logos"><strong>Logo Options</strong> - <a href="#toc">Top</a></h4>
+				
+				<ul>
+					<li><strong>Upload Image Logo:</strong> Browse your computer and upload your new logo. After uploading, an image preview will appear.</li>
+					<li><strong>Delete Logo image:</strong> Check this and save to remove image.</li>
+					<li><strong>Enable plain text logo:</strong> Should you not have a graphical logo, you can enable a plain text logo which will automatically display your site name and description.</li>
+					<li><strong>Site Tagline:</strong> Show site tagline under logo.</li>
+					<li><strong>Upload Login Logo:</strong> Browse your computer and upload your new login logo. The recommended max size to fit WP defaults is 325px x 80px. After uploading, an image preview will appear.</li>
+					<li><strong>Delete Login Logo image:</strong> Check this and save to remove custom login logo image.</li>
+				</ul>
+				
+				<p><img src="assets/images/custom-login-logo.gif" alt="" width="382" height="329" />
+				<span class="note">Example showing the custom login logo implemented.</span></p>
+				
+				
+				<h4 id="options-icons"><strong>Icon</strong> - <a href="#toc">Top</a></h4>
+				
+				<ul>
+					<li><strong>Upload Favicon:</strong> Browse your computer and upload your new favicon. After uploading, an image preview will appear.</li>
+					<li><strong>Delete Favicon Image:</strong> Check this and save to remove image.</li>
+					<li><strong>Upload Apple-Touch-Icon:</strong> Browse your computer and upload your new apple-touch-icon. After uploading, an image preview will appear.</li>
+					<li><strong>Delete Apple-Touch-Icon Image:</strong> Check this and save to remove image.</li>
+				</ul>
+				
+
+				<h4 id="options-theme-styles"><strong>Theme Styles</strong> <span class="quiet small"></span> - <a href="#toc">Top</a></h4>
+				
+				<p>The theme styles options allow you to change the basic color structure of the navigational elements. For both the Utility and Primary navigations, options to set the background and border colors along with the hover state colors for each as well.</p>
+				
+				<p>For each color selection, click in the input box to select a color, enter a color by hexadecimal value, or a color name (e.g. green, purple, aqua). A color picker will display allowing you to select a color. After a color option has been achieved in the color picker, click on the small circular color wheel icon in the lower right corner of the color picker to set it's value. Click outside of the color picker to exit color picker. After updating your page, a colored circle with your chosen color should appear in the input.</p>
+				
+				<ul>
+					<li><strong>Utility Background Color:</strong> </li>
+					<li><strong>Utility Border Color:</strong> </li>
+					<li><strong>Utility Hover Background Color:</strong> </li>
+					<li><strong>Utility Border Color:</strong> </li>
+					<li><strong>Primary Level 1 Background Color:</strong> </li>
+					<li><strong>Primary Level 1 Border Color:</strong> </li>
+					<li><strong>Primary Level 1 Hover Background Color:</strong> </li>
+					<li><strong>Primary Level 1 Border Color:</strong> </li>
+					<li><strong>Primary Level 2 Background Color:</strong> </li>
+					<li><strong>Primary Level 2 Border Color:</strong> </li>
+					<li><strong>Primary Level 2 Hover Background Color:</strong> </li>
+					<li><strong>Primary Level 2 Border Color:</strong> </li>
+					<li><strong>Primary Level 3 Background Color:</strong> </li>
+					<li><strong>Primary Level 3 Border Color:</strong> </li>
+					<li><strong>Primary Level 3 Hover Background Color:</strong> </li>
+					<li><strong>Primary Level 3 Border Color:</strong> </li>
+				</ul>
+
+				
+				<h4 id="options-menu"><strong>Navigation Menu Options</strong> <span class="quiet small"></span> - <a href="#toc">Top</a></h4>
+				
+				<p>The menu options are automatically pulled into the theme. You can however use WordPress's built in menu options to customize the default menus for this theme.</p>
+				
+				<ul>
+					<li><strong>Hide Utility Navigation:</strong> Check this to hide the utility navigation from appearing on the page.</li>
+				</ul>
+				
+				
+				<h4 id="options-layout"><strong>Layout Options</strong> <span class="quiet small"></span> - <a href="#toc">Top</a></h4>
+				
+				<p>Choose how many columns will be displayed. This needs to be the same number as the number of top level navigation items there are.</p>
+				
+				<ul>
+					<li><strong>Number of Columns:</strong> Select a number from the dropdown.</li>
+				</ul>
+				
+				<p>By default the web URLs are shown, however you can hide them by checking the box below.</p>
+				
+				<ul>
+					<li><strong>Hide URLs:</strong> Check this to hide the URLs.</li>
+				</ul>
+
+
+				<h4 id="options-misc"><strong>Miscellaneous</strong> - <a href="#toc">Top</a></h4>
+				
+				<p>The <code>flush()</code> function in WordPress can help speed up your website dramatically. Important: This has been known to not play nice with W3 Total Cache plugin</p>
+				
+				<ul>
+					<li><strong>Enable "Flushing":</strong> Check this to enable the <code>flush()</code> function after the <code>head</code> tag</li>
+				</ul>
+				
+				
+				<h4 id="options-misc"><strong>Footer Text</strong> - <a href="#toc">Top</a></h4>
+				
+				<ul>
+					<li><strong>Copyright:</strong> Enter a name to be inserted into the footer for Copyright info.</li>
+					<li><strong>Text:</strong> Enter any additional text to be displayed in the footer.</li>
+				</ul>
+				
+				<h4 id="options-analytics"><strong>Analytics</strong> - <a href="#toc">Top</a></h4>
+				
+				<p>Enter your Analytics code in the textarea provided to enable by placing it in the footer (e.g. Google Analytics).</p>
+				
+				
+				<h4 id="options-misc"><strong>Save the Web</strong> - <a href="#toc">Top</a></h4>
+				
+				<ul>
+					<li><strong>Save the Web:</strong> Check this to help save the internet by letting IE6 users know there are other options available.</li>
+					<li><strong>Pushup the Web:</strong> Check this in an effort to push the web forward by helping users upgrade their outdated browsers. When people visit your website using an outdated browser, a subtle upgrade link is shown at the top right hand corner of the screen. They can click this link to visit the upgrade website for that browser, or choose to be reminded after a time you specify.</li>
+				</ul>
+				
+		<hr>
+		
+		
+		
+		<h3 id="thumbs"><strong>Post Thumbnails</strong> - <a href="#toc">Top</a></h3>
+		
+				 <p>The Slickmapper theme supports the use of Post Thumbnails. <strong>Note: you must have WordPress version 2.9 or later to use this feature.</strong> The theme supports auto-resizing of the post thumbnails and so there is only the requirement to specify a single image. However, auto-resizing will only occur when the image is uploaded for the first time, images that have previously been uploaded will not be resized.</p>
+				 
+				 <p><strong>To ensure the correct display of images across your site, ensure you specify an image with dimensions of 560 x 300 or larger.</strong></p>
+				 
+				 <p>To upload a post thumbnail, go to <em><strong>Posts/Page -> Add New</strong></em> or open an existing post in editing mode. Locate the Featured Image module and click the Set featured image link. If you are using WordPress 2.9 it will refer to it as a Post Thumbnail.</p>
+				 
+				 <p>Clicking the link will open up the usual WordPress image uploader where you will upload the image as usual. Simply make sure that it is either the same size or larger than what the final thumbnail will be. Once you’re done uploading the image, simply click the link that says “Set Featured Image”, which is next to the button to insert it into the post.</p>
+				 
+				 <p>Once you’re done, a preview of the image should appear in the right-hand box and you are free to insert the image into the post as with any other image. </p>
+				 
+				 <p>For more on how to use the WP2.9+ Post Thumbnail feature you can view this article - <a href="http://en.support.wordpress.com/featured-images/">http://en.support.wordpress.com/featured-images/</a></p>
+		
+		<hr>
+		
+		
+
+			<h3 id="javascript"><strong>JavaScript</strong> - <a href="#toc">Top</a></h3>
+			
+					<p>This theme imports various Javascript files.</p>
+					
+					<ol>
+						<li>jQuery</li>
+						<li>Color Picker</li>
+						<li>Fancy Box</li>
+						<li>Modernizr</li>
+						<li>Pushup</li>
+						<li>Theme Scripts</li>
+					</ol>
+					  
+					<ol>
+						<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+						<li>Color Pick is used in the theme options to select colors.</li>
+						<li>FancyBox is modal box script used to display video's in "Instant View".</li>
+						<li>Modernizr adds classes to the <code>html</code> element which allow you to target specific browser functionality in your stylesheet. You don't actually need to write any Javascript to use it.</li>
+						<li>Pushup is a javascript file used in the theme options to notify users of updates to their browser.</li>
+						<li>Theme scripts are various scripts that improve the overall functionality of the site.</li>
+					</ol>
+			
+			<hr>
+			
+			
+			
+			<h3 id="workingFiles"><strong>Working Files</strong> - <a href="#toc">Top</a></h3>
+			
+					<p>I've included all PNG images with this theme. If you use Adobe Fireworks, you can open these images and edit the layers. If not, I suggest getting Adobe Fireworks, it's wonderful.</p>
+					
+					<p>All PNG's contain styling for necessary elements.</p>
+			
+			<hr>
+			
+			
+			
+			<h3 id="credits"><strong>Sources and Credits</strong> - <a href="#toc">Top</a></h3>
+			
+					<p>I've used the following images, icons or other files as listed.
+					
+					<ul>
+						<li>SlickMap CSS - <a href="http://astuteo.com/slickmap/">http://astuteo.com/slickmap/</a></li>
+						<li>1% For The Plant (Video & Screenshots for demo) - <a href="http://www.onepercentfortheplanet.org/">http://www.onepercentfortheplanet.org/</a></li>
+						<li>jQuery - <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js</a></li>
+						<li>HTML5, Modernizr, and other goodies - <a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a></li>
+						<li>Fancybox - <a href="http://fancybox.net/">http://fancybox.net/</a></li>
+						<li>Modernizr - <a href="http://www.modernizr.com/">http://www.modernizr.com/</a></li>
+						<li>ColorPicker - <a href="http://www.eyecon.ro/colorpicker/">http://www.eyecon.ro/colorpicker/</a></li>
+						<li>Pushup - <a href="http://www.pushuptheweb.com/">http://www.pushuptheweb.com/</a></li>
+					</ul>
+			
+			<hr>
+			
+			<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeGarden, you might consider visiting the ThemeGarden.com and asking your question via the Contact Page.</p> 
+			
+			<p class="append-bottom alt large"><strong>Luke</strong></p>
+			<p><a href="#toc">Go To Table of Contents</a></p>
+			
+			<hr class="space">
+		</div><!-- end div .container -->
+	</body>
+</html>
